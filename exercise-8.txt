@@ -1,0 +1,6 @@
+Exercise 8
+
+List how many phones were landlines, 
+cellular and fax for entries with birthdates between October 1950 and October 1960
+
+select Phone.subtype, count(*) from Entry join Phone on Entry.id=Phone.entryId where Entry.birthday>'1950-09-30' and Entry.birthday<'1960-9-30' group by Phone.subtype;
