@@ -1,0 +1,14 @@
+/*
+Before starting!
+
+With your newly acquired knowledge, go back to mysql-workshop-2 and answer the following questions about the address book schema:
+
+Exercise 1
+Which Account owns the most Address Books?
+Which Address Book contains the most Entries?
+
+*/
+
+select firstName,lastName,count(*) as count  from Entry group by lastName order by count desc limit 5;
+
+select firstName,lastName,count(*) as count from Entry group by addressBookId order by count desc limit 5; 
