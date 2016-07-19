@@ -1,0 +1,5 @@
+Exercise 6
+
+List all of the phone numbers for Jenkins, Charlotte
+
+select Phone.content from Entry join Phone on Entry.id=Phone.entryId where Entry.firstName='Charlotte' and Entry.lastName='Jenkins';
