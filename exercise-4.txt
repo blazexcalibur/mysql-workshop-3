@@ -1,0 +1,5 @@
+Exercise 4
+
+List all of the first names for AddressBook.name="Pharetra Ut Limited"
+
+select Entry.firstName from AddressBook join Entry on AddressBook.id=Entry.addressBookId where AddressBook.name='Pharetra Ut Limited';
