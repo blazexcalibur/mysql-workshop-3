@@ -1,0 +1,6 @@
+Exercise 5
+
+List all of the emails associated to AddressBook.id = 100
+
+select Account.email from Account join AddressBook on Account.id=AddressBook.accountId where AddressBook.id=100;
+
