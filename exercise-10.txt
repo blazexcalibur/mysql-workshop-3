@@ -1,0 +1,14 @@
+Exercise 10
+
+Transform all work emails into home emails and vice versa. BE CAREFUL ;)
+/*
+select type='home' from ElectronicMail for update;
+
+update ElectronicMail set type='work' where type='home';
+*/
+update ElectronicMail
+set type = case
+    when type like 'home' then 'work'
+    when type like 'work' then 'home'
+    else type like 'other'
+end
